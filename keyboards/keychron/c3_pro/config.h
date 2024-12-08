@@ -20,9 +20,14 @@
 #define LED_MAC_OS_PIN A4
 #define LED_WIN_OS_PIN A5
 #define LED_OS_PIN_ON_STATE 1
+#define LED_PIN_ON_STATE 1
 
 /* I2C driver Configuration */
 #define I2C1_SCL_PIN B8
 #define I2C1_SDA_PIN B9
 #define I2C1_CLOCK_SPEED 400000
 #define I2C1_DUTY_CYCLE FAST_DUTY_CYCLE_2
+
+#define CAPS_WORD_INVERT_ON_SHIFT
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+#define IS_COMMAND() (get_mods() == MOD_MASK_CTRL)
